@@ -10,10 +10,10 @@ class Controller:
         logging.debug(self.__class__.__name__ + f':  device = {device}')
 
         # Open Serial Port 
-        self.ser = serial.Serial(device, baudrate=100000, parity=serial.PARITY_EVEN, stopbits=2)
+        #  self.ser = serial.Serial(device, baudrate=100000, parity=serial.PARITY_EVEN, stopbits=2)
 
     # S-Bus Frame Format (16 channels, 25-byte frame)
-    def send_speed(self, pan=1024, tilt=1024, roll=1024):
+    def send_speed(self, pan=1023, tilt=1023, roll=1023):
         # Convert 11-bit channel values to 25-byte S-Bus packet
         packet = bytearray(25)
         packet[0] = 0x0F  # S-Bus Start Byte
@@ -28,4 +28,4 @@ class Controller:
         packet[24] = 0x00  # S-Bus End Byte
 
         logging.debug(self.__class__.__name__ + f':  packet send = {packet}')
-        self.ser.write(packet) 
+      #  self.ser.write(packet) 

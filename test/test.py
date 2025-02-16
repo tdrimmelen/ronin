@@ -1,5 +1,8 @@
 from ronincontroller import controller
 import json
+import logging
+
+logging.basicConfig(level=logging.DEBUG)
 
 controldatajson = '{"pan":1023, "tilt": 1023, "roll":1023}'
 
