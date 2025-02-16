@@ -1,8 +1,0 @@
-setup.py
-ronincontroller/__init__.py
-ronincontroller/controller.py
-ronincontroller.egg-info/PKG-INFO
-ronincontroller.egg-info/SOURCES.txt
-ronincontroller.egg-info/dependency_links.txt
-ronincontroller.egg-info/requires.txt
-ronincontroller.egg-info/top_level.txt
