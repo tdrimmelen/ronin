@@ -1,1 +1,2 @@
-src/ronincontroller/ronincontroller.egg-info/*
+src/ronincontroller.egg-info/*
+src/build/*
